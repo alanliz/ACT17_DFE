@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 700;
+}
+
+h3 {
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 400;
+}
+
+.maincontent {
+    padding: 20px;
+}
+
+.imgrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas de igual ancho */
+    grid-template-rows: repeat(3, auto); /* 3 filas con altura automática */
+    gap: 10px; /* Espacio entre las celdas */
+}
+
+.col {
+    overflow: hidden;
+    position: relative;
+    height: 200px; 
+}
+
+.col img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+/* Estilo del dropdown */
+select {
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 600;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Estilo del placeholder (opción deshabilitada) */
+select option[disabled] {
+    color: gray;
+}
+
+#warningMessage {
+    color: red;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 400;
+    margin-top: 10px;
+}
